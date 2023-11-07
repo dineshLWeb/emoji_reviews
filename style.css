@@ -38,6 +38,7 @@ body{
    transform: translate(0);
    transition: transform .2s;
 }
+
 .star{
     position: absolute;
     left: 50%;
@@ -47,6 +48,7 @@ body{
 .star i{
    color: grey;
    cursor: pointer;
+   
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -56,6 +58,7 @@ body{
 }
 .star i.active{
     color: gold;
+    
 }
 
 p{
@@ -85,31 +88,8 @@ p a{
     text-decoration: none;
 }
 
-@media(max-width:1306px){
-    .star{
-        width: 100%;
-        text-align: center;
-    }
-    p{
-        width: 100%;
-        text-align: center;
-    }
-}
-@media(max-width:953px){
-    .container{
-        width: 70%;
-    }
-}
-/* Add responsive styles for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        width: 80%;
-    }
 
-    .comment-section {
-        margin-top: 10px;
-    }
-}
+  
 /* Add styles for the comment section */
 .comment-section {
     margin-top: 200px;
@@ -309,7 +289,40 @@ h2 {
     cursor: pointer;
 }
 
+@media(max-width:1306px){
+    .star{
+        width: 100%;
+        
+       
+        
+        text-align: center;
+    }
+    p{
+        width: 100%;
+        text-align: center;
+    }
+    .comment-section {
+        margin-top: 250px;
+    }
+    
+}
+@media(max-width:953px){
+    .container{
+        width: 70%;
+        
+    }
+    
+}
+/* Add responsive styles for smaller screens */
+ @media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
 
-
+    .comment-section {
+        margin-top: 280px;
+    }
+   
+}  
 
 
